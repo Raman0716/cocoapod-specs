@@ -1,8 +1,8 @@
 {
   "name": "TokenSDK",
   "version": "0.0.3",
-  "summary": "TokenSDK.区块链，公司认证，实名认证，上链服务，身份密码，加密存储服务",
-  "description": "TokenSDK.区块链，公司认证，实名认证，上链服务，身份密码，加密存储服务的库.",
+  "summary": "TokenSDK,Token qukuailian,区块链,身份管理,企业管理",
+  "description": "TokenSDK,Token qukuailian,区块链,身份管理,企业管理.....",
   "homepage": "https://github.com/EasySnail/TokenSDK",
   "license": {
     "type": "MIT",
@@ -18,49 +18,37 @@
     "git": "https://github.com/EasySnail/TokenSDK.git",
     "tag": "0.0.3"
   },
-  "source_files": "TokenCore/**/*.{h,m}",
   "frameworks": [
     "UIKit",
     "Foundation"
   ],
-  "requires_arc": true,
+  "vendored_frameworks": "Framework/TokenSDK.framework",
+  "xcconfig": {
+    "BITCODE_GENERATION_MODE": "bitcode"
+  },
+  "swift_versions": "5.0",
   "dependencies": {
-    "Masonry": [
-      "~> 1.1.0"
-    ],
-    "MJRefresh": [
-      "~> 3.1.15.7"
-    ],
-    "AFNetworking": [
-      "~> 3.2.1"
-    ],
-    "MBProgressHUD": [
-      "~> 1.1.0"
-    ],
-    "SDWebImage": [
-      "~> 5.0.0-beta5"
+    "EasyLibs": [
+      "~> 0.0.5"
     ],
     "BigInt": [
-      "~> 4.0.0"
+      "~> 5.0.0"
     ],
     "CryptoSwift": [
-      "~> 1.0.0"
+      "~> 1.2.0"
     ],
     "PromiseKit": [
-      "~> 6.8.5"
+      "~> 6.12.0"
     ],
     "Starscream": [
-      "~> 3.1.0"
+      "~> 3.1.1"
     ],
     "secp256k1.c": [
       "~> 0.1.2"
     ],
-    "YYModel": [
-      "~> 1.0.4"
-    ],
     "TZImagePickerController": [
-      "~> 3.2.0"
+      "~> 3.2.7"
     ]
   },
-  "swift_version": "4.0"
+  "swift_version": "5.0"
 }

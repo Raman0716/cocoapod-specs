@@ -49,21 +49,12 @@
   },
   "vendored_frameworks": [
     "CPaaSSDK.framework",
-    "WebRTC.framework",
-    "CPaaSSDK.framework/SubFrameworks/CPUtilities.framework",
-    "CPaaSSDK.framework/SubFrameworks/CPAddressBookService.framework",
-    "CPaaSSDK.framework/SubFrameworks/CPAuthenticationService.framework",
-    "CPaaSSDK.framework/SubFrameworks/CPCallService.framework",
-    "CPaaSSDK.framework/SubFrameworks/CPMessagingService.framework",
-    "CPaaSSDK.framework/SubFrameworks/CPPresenceService.framework",
-    "CPaaSSDK.framework/SubFrameworks/CPPushService.framework",
-    "CPaaSSDK.framework/SubFrameworks/NotificationEngine.framework",
-    "CPaaSSDK.framework/SubFrameworks/RestManager.framework"
+    "WebRTC.framework"
   ],
   "preserve_paths": "CPaaSSDK.framework/SubFrameworks/*.framework",
-  "pod_target_xcconfig": {
+  "user_target_xcconfig": {
     "ENABLE_BITCODE": "NO",
-    "FRAMEWORK_SEARCH_PATHS": "$(inherited) \"${PODS_ROOT}/KandyWebRTC/Frameworks\"",
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) \"${PODS_ROOT}/KandyCPaaSMobileSDK/CPaaSSDK.framework/SubFrameworks\" \"${PODS_ROOT}/KandyWebRTC/Frameworks\"",
     "OTHER_LDFLAGS": "$(inherited) -framework WebRTC -ObjC",
     "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
   }
